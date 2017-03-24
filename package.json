@@ -1,0 +1,24 @@
+{
+  "name": "webix-backbone",
+  "version": "1.0.0",
+  "description": "Backbone adapter for Webix UI",
+  "main": "sources/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webix-hub/webix-backbone.git"
+  },
+  "keywords": [
+    "webix",
+    "ui",
+    "backbone"
+  ],
+  "author": "Maksim Kozhukh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/webix-hub/webix-backbone/issues"
+  },
+  "homepage": "https://github.com/webix-hub/webix-backbone#readme"
+}

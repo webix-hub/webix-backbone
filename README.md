@@ -1,7 +1,7 @@
 Backbone adapter for Webix UI
 ==========================
 
-[![npm version](https://badge.fury.io/js/backbone-webix.svg)](https://badge.fury.io/js/backbone-webix)
+[![npm version](https://badge.fury.io/js/webix-backbone.svg)](https://badge.fury.io/js/webix-backbone)
 
 Before Webix 4.3 this module was part of webix.js
 

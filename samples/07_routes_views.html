@@ -13,16 +13,17 @@
 	</head>
 	<body>
 		<div style="height:300px; width:200px" id="app1_here"></div>
-		
-		
+
+
 		<script type="text/javascript" charset="utf-8">
 			var routes = new (Backbone.Router.extend({
 				routes:{
-					"":"index", 
+					"":"index",
 					"films/:id":"details"
 				},
 				details:function(id){
 					template.render();
+					if($$("mylist")){ $$("mylist").destructor();}
 				},
 				index:function(){
 					layout.render();
@@ -58,7 +59,7 @@
 
 			//init app
 			Backbone.history.start();
-			
+
 		</script>
 	</body>
 </html>

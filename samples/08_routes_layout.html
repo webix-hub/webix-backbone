@@ -13,12 +13,12 @@
 	</head>
 	<body>
 		<div style="height:300px; width:200px" id="app1_here"></div>
-		
-		
+
+
 		<script type="text/javascript" charset="utf-8">
 			var routes = new (Backbone.Router.extend({
 				routes:{
-					"":"index", 
+					"":"index",
 					"films/:id":"details"
 				},
 				details:function(id){
@@ -39,9 +39,13 @@
 			});
 			var list = new WebixView({
 				config:{
-					view:"list", url:"common/data.json",
-					template:"#title#", select:true,
-					id:"mylist"
+					rows:[
+						{
+							view:"list", url:"common/data.json",
+							template:"#title#", select:true,
+							id:"mylist"
+						}
+					]
 				}
 			});
 			var layout = new WebixView({
@@ -58,7 +62,7 @@
 			//init app
 			layout.render();
 			Backbone.history.start();
-			
+
 		</script>
 	</body>
 </html>

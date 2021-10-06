@@ -13,7 +13,7 @@
 	</head>
 	<body>
 		<div style="height:300px" class="app1_here"></div>
-		
+
 		<br>
 		<div id="controls">
 			<input type="button" value="Add" onclick='$$("mylist").add({ title:"New Item" }, 1)'>
@@ -21,10 +21,19 @@
 		</div>
 
 		<script type="text/javascript" charset="utf-8">
-			$(".app1_here").webix_list({
-				id:"mylist", width:200,
-				template:"#title#", select:true
-			});
+
+			new WebixView({
+				el:".app1_here",
+				config:{
+					rows:[
+						{
+							view:"list",
+							template:"#title#", select:true,
+							id:"mylist"
+						}
+					]
+				}
+			}).render();
 
 			FilmRecord = Backbone.Model.extend({});
 			FilmList = Backbone.Collection.extend({
